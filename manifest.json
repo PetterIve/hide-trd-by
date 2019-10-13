@@ -2,5 +2,12 @@
   "name": "Hide trd.by",
   "version": "0.1",
   "description": "Hides trd.by articles from adressa.no",
+  "content_scripts": [
+    {
+      "matches": ["https://*.adressa.no/*"],
+      "js": ["hideTrdByArticles.js"]
+    }
+  ],
+
   "manifest_version": 2
 }
